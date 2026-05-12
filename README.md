@@ -136,7 +136,7 @@ Dataset repository:
 
 Run the notebooks in the following order:
 
-- 01_generating_xai_guided_llm_explanations.ipynb
+- 01_generate_xai_guided_llm_explanations.ipynb
 - 02_llm_judge_evaluation.ipynb
 
 
