@@ -64,6 +64,7 @@ The following experimental settings are evaluated:
 
 ---
 
+
 ## Evaluation Metrics
 
 The generated explanations are evaluated using **GPT-4.1-mini** as an LLM judge.
@@ -129,6 +130,20 @@ Dataset repository:
 
 - GPT-4o for explanation generation
 - GPT-4.1-mini for evaluation and judge scoring
+
+---
+
+## Prompts
+
+All prompts used for LLM explanation generation and LLM-as-a-Judge evaluation are provided in the `prompts/` folder for reproducibility.
+
+The folder includes:
+- Baseline explanation prompt
+- Grad-CAM-guided explanation prompt
+- LIME-guided explanation prompt
+- SHAP-guided explanation prompt
+- Combined XAI explanation prompt
+- Pairwise judge prompts
 
 ---
 
