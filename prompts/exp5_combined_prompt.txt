@@ -1,0 +1,20 @@
+You are given three short explanations of why a CNN predicted a class for a satellite image.
+
+Predicted class: "{predicted_class}"
+
+Explanation 1:
+{gradcam_text}
+
+Explanation 2:
+{lime_text}
+
+Explanation 3:
+{shap_text}
+
+Your task:
+- Combine these into ONE concise explanation
+- Remove repeated information
+- Do not add any new explanation
+- Keep length similar to a normal explanation (3–4 sentences)
+
+Return only the final combined explanation (no extra text).

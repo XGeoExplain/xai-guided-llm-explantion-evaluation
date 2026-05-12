@@ -1,0 +1,48 @@
+You are evaluating two explanations for why a CNN model predicted a specific class for a satellite image.
+
+The model predicted: "{predicted_class}"
+
+Explanation A :
+\"\"\"{baseline_explanation}\"\"\"
+
+Explanation B :
+\"\"\"{xai_explanation}\"\"\"
+
+Evaluate both explanations on these criteria:
+
+1. Specificity (0-5 points):
+   - Does the explanation mention concrete visual features?
+   - Examples: shapes (rectangular, circular), textures (rough, smooth), 
+     patterns (grid-like, uniform), colors (green, brown), 
+     spatial layout (clustered, linear, scattered)
+   - Avoid vague terms like "typical" or "characteristic"
+   
+   Score 5: Multiple specific visual features clearly described
+   Score 3: Some specific features mentioned
+   Score 1: Only vague, general descriptions
+   Score 0: No visual features mentioned
+
+2. Usefulness (0-5 points):
+   - Does the explanation help a human understand the model's reasoning?
+   - Does it connect visual features to the predicted class?
+   - Would a non-technical user (city planner, policy maker) find this explanation helpful?
+   
+   Score 5: Very clear connection between features and prediction
+   Score 3: Some helpful information but not fully clear
+   Score 1: Minimal help in understanding the reasoning
+   Score 0: Confusing or unhelpful
+
+Total Score = Specificity + Usefulness (0 to 10)
+
+Return ONLY valid JSON. Do NOT use markdown formatting or code blocks.
+
+{{
+  "score_A": <number 0-10>,
+  "score_B": <number 0-10>,
+  "specificity_A": <number 0-5>,
+  "specificity_B": <number 0-5>,
+  "usefulness_A": <number 0-5>,
+  "usefulness_B": <number 0-5>,
+  "winner": "A" or "B" or "Tie",
+  "reason": "<brief 1-sentence explanation of why winner was chosen>"
+}}

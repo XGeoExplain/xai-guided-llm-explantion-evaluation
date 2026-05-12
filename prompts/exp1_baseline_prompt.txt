@@ -1,0 +1,14 @@
+You are given a satellite image and the prediction of a CNN model.
+                                
+                                The model predicted the class: "{predicted_class}".
+                                
+                                Your task is to explain WHY the model made this prediction.
+                                
+                                Instructions:
+                                - Focus on visible features in the image that support this prediction
+                                - Be specific (e.g., shapes, textures, patterns, spatial layout)
+                                - Do NOT give a general description of the scene
+                                - Do NOT mention environmental or societal importance
+                                - Explain in a way that helps a human understand the model's reasoning
+                                
+                                Keep the explanation concise (3–4 sentences).

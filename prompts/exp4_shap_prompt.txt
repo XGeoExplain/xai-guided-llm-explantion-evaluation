@@ -1,0 +1,19 @@
+You are given a satellite image and the prediction of a CNN model.
+                                
+                                The model predicted the class: "{predicted_class}".
+                                
+                                Additional information:
+                                A SHAP analysis indicates that the model focused on the following regions: {shap_text}.
+                                
+                                Your task is to explain WHY the model made this prediction.
+                                
+                                Instructions:
+                                - Use both the image and the highlighted region information
+                                - Focus on visible features that support this prediction
+                                - Be specific (shapes, textures, spatial patterns)
+                                - Do NOT describe the scene in general terms
+                                - Do NOT mention environmental or societal importance
+                                - Do NOT mention SHAP explicitly
+                                - Explain in a way that helps a human understand the model's reasoning"
+                                
+                                Keep the explanation concise (3–4 sentences).
